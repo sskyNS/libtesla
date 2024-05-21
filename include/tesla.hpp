@@ -117,12 +117,12 @@ namespace tsl {
         namespace color {
             constexpr Color ColorFrameBackground  = { 0x0, 0x0, 0x0, 0xA };   ///< Overlay frame background color
             constexpr Color ColorTransparent      = { 0x0, 0x0, 0x0, 0x0 };   ///< Transparent color
-            constexpr Color ColorHighlight        = { 0x0, 0xF, 0xD, 0xF };   ///< Greenish highlight color
+            constexpr Color ColorHighlight        = { 0x0, 0x7, 0x6, 0xF };   ///< Greenish highlight color
             constexpr Color ColorFrame            = { 0x7, 0x7, 0x7, 0x0 };   ///< Outer boarder color
-            constexpr Color ColorHandle           = { 0x5, 0x5, 0x5, 0xF };   ///< Track bar handle color
-            constexpr Color ColorText             = { 0x2, 0x8, 0xB, 0xF };   ///< Standard text color
-            constexpr Color ColorDescription      = { 0x2, 0x8, 0xB, 0xF };   ///< Description text color
-            constexpr Color ColorHeaderBar        = { 0x3, 0x8, 0x9, 0xF };   ///< Category header rectangle color
+            constexpr Color ColorHandle           = { 0x5, 0x7, 0x9, 0xF };   ///< Track bar handle color
+            constexpr Color ColorText             = { 0x4, 0x7, 0x8, 0xF };   ///< Standard text color
+            constexpr Color ColorDescription      = { 0xA, 0x8, 0x3, 0xF };   ///< Description text color
+            constexpr Color ColorHeaderBar        = { 0xC, 0xC, 0xC, 0xF };   ///< Category header rectangle color
             constexpr Color ColorClickAnimation   = { 0x0, 0x2, 0x2, 0xF };   ///< Element click animation color
         }
     }
@@ -2309,7 +2309,7 @@ namespace tsl {
              * @param onValue Value drawn if the toggle is on
              * @param offValue Value drawn if the toggle is off
              */
-            ToggleListItem(const std::string& text, bool initialState, const std::string& onValue = "On", const std::string& offValue = "Off")
+            ToggleListItem(const std::string& text, bool initialState, const std::string& onValue = "开启", const std::string& offValue = "关闭")
                 : ListItem(text), m_state(initialState), m_onValue(onValue), m_offValue(offValue) {
 
                 this->setState(this->m_state);
